@@ -98,6 +98,10 @@ body{
     padding: 0 20px;
     position: relative;
 }
+#mobile {
+    display: none;
+    align-items: center;
+}
 #navbar li a {
     text-decoration: none;
     font-size: 16px;
@@ -128,7 +132,7 @@ body{
     background: #088178;
     position: absolute;
     bottom: -4px;
-    right: 20px;
+    left: 20px;
 }
 
 /* Home Page */
@@ -549,5 +553,55 @@ footer .install  .row .pay{
     width: 250px;
 
 }
+#close{
+    display: none;
+}
 
 
+/* media query */
+
+@media (max-width: 799px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        right: -300px;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba( 0, 0, 0,0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar li {
+        margin-bottom: 15px;
+    }
+    .active{
+        right: 0px !important;
+    }
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #000;
+        font-size: 18px;
+        padding-left: 20px;
+    }
+    #close{
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #000;
+        font-size: 18px;
+    }
+    #bag{
+        display: none;
+    }
+
+
+}
