@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
     font-size: 50px;
@@ -685,6 +685,22 @@ footer .install  .row .pay{
         width: 100%;
         margin: 10px;
     }
+    /* single product */
+
+    #prodetails{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    #prodetails .singlepro-img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .single-pro-details{
+        
+        width: 100%;
+
+    }
         
     }
 
@@ -713,10 +729,68 @@ footer .install  .row .pay{
     color: #000;
 }
 #pagination a{
-    color: #000;
+    color: #ffffff;
     
     padding: 10px 15px 10px 15px;
     border-radius: 4px;
     background-color: #088178;
     text-decoration: none;
+}
+
+/* single product */
+
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .singlepro-img{
+    width: 40%;
+    margin-right: 50px;
+    /* background-color: darkgray; */
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    padding: 5px 10 ;
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: white;
+}
+#prodetails .single-pro-details span{
+    display: block;
+    line-height: 25px;
 }
